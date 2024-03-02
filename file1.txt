@@ -1,2 +1,1 @@
-Hello bob
-Hello Alice
+Hello world
