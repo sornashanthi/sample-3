@@ -11,14 +11,18 @@ def divide(x, y):
     if(y==0):
         return "Divide by Zero"
     return x / y
+
+def multiply(x,y):
+    return x*y
+
 print("Select operation.")
 print("1.Add")
 print("2.Subtract")
 print("3.Divide")
-
+print("4.Multiply")
 while True:
 # Take input from the user
-choice = input("Enter choice(1/2/3): ")
+choice = input("Enter choice(1/2/3/4): ")
 
 # Check if choice is one of the four options
 if choice in ('1', '2', '3'):
@@ -33,6 +37,9 @@ if choice in ('1', '2', '3'):
 
     elif choice == '3':
         print(num1, "/", num2, "=", divide(num1, num2))
+
+    elif choice == '4':
+        print(num1, "*", num2, "=", multiply(num1, num2))
 else:
     print("Invalid Input")
 
